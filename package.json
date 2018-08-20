@@ -1,13 +1,13 @@
 {
 	"name": "language-dooca",
 	"main": "./lib/language-dooca",
-	"version": "0.0.0",
-	"description": "A short description of your package",
+	"version": "1.0.0",
+	"description": "A dooca language support",
 	"keywords": [],
 	"activationCommands": {
 		"atom-workspace": "language-dooca:toggle"
 	},
-	"repository": "https://github.com/atom/language-dooca",
+	"repository": "https://github.com/gabrieldooca/language-dooca",
 	"license": "MIT",
 	"engines": {
 		"atom": ">=1.0.0 <2.0.0"
