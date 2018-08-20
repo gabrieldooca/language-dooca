@@ -10,7 +10,7 @@
         },
         "Liquid schema": {
             "prefix": "schema",
-            "body": "{% schema %}\n\t{\n\t\t\"name\": \"${1}\",\n\t\t\"category\": \"${2}\",\n\t\t\"settings\": [${3}],\n\t\t\"blocks\": [${4}]\n\n\t}\n{% endschema %}"
+            "body": "{% schema %}\n\t{\n\t\t\"name\": \"${1}\",\n\t\t\"category\": \"${2}\",\n\t\t\"settings\": [${3}],\n\t\t\"blocks\": [${4}]\n\t}\n{% endschema %}"
         },
         "Liquid img tag": {
             "prefix": "imgt",
