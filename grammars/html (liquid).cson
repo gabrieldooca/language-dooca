@@ -2,8 +2,8 @@
     'liquid'
     'html'
 ]
-'foldingStartMarker': '(?x){%?\\s*(if|unless|for|paginate|capture|form|case|tablerow|raw|comment|block|paginate|schema|stylesheet|javascript)[^(%})]+?%}'
-'foldingStopMarker': '(?x){%?\\s*(endif|endunless|endfor|endpaginate|endcapture|endform|endcase|endtablerow|endraw|endcomment|endblock|endpaginate|endschema|endstylesheet|endjavascript)[^(%})]+?%}'
+'foldingStartMarker': '(?x){%-?\\s*(if|unless|for|paginate|capture|form|case|tablerow|raw|comment|block|paginate|schema|stylesheet|javascript)[^(%})]+-?%}'
+'foldingStopMarker': '(?x){%-?\\s*(endif|endunless|endfor|endpaginate|endcapture|endform|endcase|endtablerow|endraw|endcomment|endblock|endpaginate|endschema|endstylesheet|endjavascript)[^(%})]+-?%}'
 'name': 'HTML (Liquid)'
 'patterns': [
     {
@@ -28,8 +28,8 @@
         ]
     }
     {
-        'begin': '({%?)\\s*comment\\s(?%})'
-        'end': '({%?)\\s*endcomment\\s(?%})'
+        'begin': '({%-?)\\s*comment\\s(-?%})'
+        'end': '({%-?)\\s*endcomment\\s(-?%})'
         'name': 'comment.block.liquid'
     }
     {
@@ -43,8 +43,8 @@
         ]
     }
     {
-        'begin': '({%?)'
-        'end': '(?%})'
+        'begin': '({%-?)'
+        'end': '(-?%})'
         'name': 'punctuation.tag.liquid'
         'patterns': [
             {
@@ -87,7 +87,7 @@
                 'captures':
                     '2':
                         'name': 'entity.name.tag.liquid'
-                'match': '(((?<={%)|(?<={%))\\s*(\\w+))'
+                'match': '(((?<={%)|(?<={%-))\\s*(\\w+))'
             }
         ]
     'template_var':
